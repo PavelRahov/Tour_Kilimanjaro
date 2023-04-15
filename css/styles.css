@@ -1,0 +1,1129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+@font-face {
+    font-family: PoppinsRegular;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url("../fonts/Poppins-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url("../fonts/Poppins-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url("../fonts/Poppins-Bold.ttf");
+    font-weight: bold;
+}
+
+body {
+    background: #FFFFFF;
+    font-family: PoppinsRegular,sans-serif;
+}
+
+.navigation {
+    padding: 38px 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.navigation .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'PoppinsSemiBold',sans-serif;
+    font-size: 30px;
+    line-height: 45px;
+    color: #1D293F;
+    text-decoration: none;
+}
+
+.navigation .logo {
+    margin-right: 47px;
+}
+
+.navigation__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation__menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navigation__menu ul li {
+    margin-left: 48px;
+}
+
+.navigation__login {
+    display: flex;
+    align-items: center;
+}
+
+.navigation__login-action button {
+    border: 0;
+    outline: none;
+    width: 104px;
+    padding: 14px 0;
+    background: #00B1A7;
+    border-radius: 28px;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.menu-item {
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #1D293F;
+    text-decoration: none;
+}
+
+.menu-item.log {
+    font-family: 'PoppinsRegular',sans-serif;
+    margin-right: 40px;
+}
+
+.header {
+    padding: 48px 0 52px 0;
+    position: relative;
+}
+
+.header .container {
+    background-size: cover;
+    background-position: center;
+    border-radius: 32px;
+    padding: 108px 83px 146px 134px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+
+.opening-subtitle {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.opening__title {
+    font-family: 'PoppinsBold',sans-serif;
+    font-size: 128px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.opening__temperature {
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.opening__slider svg {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header__payment {
+    display: flex;
+    align-items: start;
+}
+
+.payment-actions {
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+.payment-text {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    max-width: 350px;
+}
+
+.payment-book {
+    font-family: 'PoppinsBold',sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+/*
+.header__socials {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    right: -10px;
+}
+
+
+.socials-social {
+    text-decoration: none;
+    font-size: 24px;
+    color: #000000;
+    margin-right: 10px;
+}*/
+
+.pickUpTour {
+    background: #FFFFFF;
+    padding-bottom: 50px;
+}
+
+.pickUpTour .container {
+    padding: 32px 72px;
+    box-shadow: 43px 43px 66px rgb(0 0 0 / 15%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settings-WhereWhen {
+    border-left: 0.5px solid #546179;
+    padding-left: 64px;
+}
+
+.settings-WhereWhen:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+
+.settings-WhereWhen-title {
+    font-family: 'PoppinsSemiBold',sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.02em;
+    color: #212529;
+    text-decoration: underline 5px yellow;
+    margin-bottom: 16px;
+}
+
+.settings-WhereWhen-subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #99A3AD;
+    display: flex;
+    align-items: center;
+}
+
+.settings-WhereWhen-subtitle svg {
+    margin-left: 48px;
+}
+
+.pickUpTour__search {
+    width: 112px;
+    background: #28B0A6;
+    border-radius: 16px;
+    text-align: center;
+    padding: 40px;
+}
+
+.description {
+    padding: 100px 0 27px 0;
+}
+
+.description__title {
+    font-family: 'PoppinsSemiBold',sans-serif;
+    font-size: 64px;
+    line-height: 55px;
+    color: #1D293F;
+    margin-bottom: 30px;
+    max-width: 1136px;
+}
+
+.description__text {
+    max-width: 1280px;
+    font-size: 24px;
+    line-height: 34px;
+    color: #546179;
+}
+
+.description__subtitle {
+    font-family: 'PoppinsBold',sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: -0.64px;
+    color: #1D293F;
+    margin-top: 105px;
+    margin-bottom: 15px;
+}
+
+.tours {
+    padding: 20px 0 80px 0;
+}
+
+.tours .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 512px));
+    column-gap: 32px;
+    row-gap: 105px;
+}
+
+.tours__package {
+    max-width: 512px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(14, 86, 124, 0.16);
+    border-radius: 20px;
+    padding: 16px 16px 32px 16px;
+    transition: all 0.3s linear;
+}
+
+.tours__package:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+}
+
+.tours__package-description {
+    margin: 32px 0 4px 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.package-description-title {
+    font-family: 'PoppinsSemiBold',sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.38px;
+    color: #1D293F;
+    margin-bottom: 8px;
+}
+
+.package-description-text {
+    max-width: 386px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #99A3AD;
+}
+
+.package-description-favorites {
+    border: 0;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.package-description-favorites svg {
+    fill: #FBFBFB;
+}
+
+.package-description-favorites:hover svg {
+    fill: #fd9898;
+}
+
+.tours__package-price {
+    margin: 4px 0 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.package-price-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+    color: #546179;
+}
+
+.package-price-cost {
+    font-family: 'PoppinsSemiBold',sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.48px;
+    color: #1D293F;
+}
+
+.package-price-rating svg {
+    margin-bottom: 9px;
+}
+
+.package-conditions-time {
+    margin-top: 8px;
+}
+
+.package-conditions-time span {
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #546179;
+    margin-left: 8px;
+}
+
+.destinations {
+    padding: 80px 0;
+}
+
+.destinations__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.head-info-title {
+    font-family: 'PoppinsBold',sans-serif;
+    font-size: 40px;
+    letter-spacing: -0.64px;
+    color: #1D293F;
+    margin-bottom: 16px;
+}
+
+.head-info-text {
+    font-size: 24px;
+    letter-spacing: -0.38px;
+    color: #546179;
+}
+
+.slider-actions {
+    display: flex;
+    align-items: center;
+}
+
+.slider-actions svg {
+    cursor: pointer;
+}
+
+.slider-actions svg:first-child {
+    margin-right: 16px;
+}
+
+.destinations__products {
+    display: grid;
+    grid-template-areas:
+                        "vietnam greece london london"
+                        "oldrain greece amsterdam paris"
+;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 648px));
+    gap: 32px;
+}
+
+.vietnam {
+    grid-area: vietnam;
+}
+
+.oldrain {
+    grid-area: oldrain;
+}
+
+.greece {
+    grid-area: greece;
+}
+
+.london {
+    grid-area: london;
+}
+
+.amsterdam {
+    grid-area: amsterdam;
+}
+
+.paris {
+    grid-area: paris;
+}
+
+.destinations__product {
+    background-position: center;
+    background-size: cover;
+    border-radius: 32px;
+    padding: 32px;
+    cursor: pointer;
+}
+
+.destinations__product:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+    transition: all 0.3s linear;
+}
+
+.destinations__product.small-cart {
+    width: 376px;
+}
+
+.destinations__product.medium-cart {
+    max-width: 512px;
+}
+
+.destinations__product.big-cart {
+    max-width: 648px;
+}
+
+.destinations__product.mini-cart {
+    width: 240px;
+}
+
+.destinations__product-rating {
+    background: #FEF2DE;
+    border-radius: 16px;
+    width: 56px;
+    padding: 6px 10px;
+
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #F5A623;
+    margin-bottom: 187px;
+}
+
+.destinations__product-rating.medium-cart {
+    margin-bottom: 554px;
+}
+
+.destinations__product-title {
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: -0.38px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.destinations__product-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.guides {
+    padding: 80px 0 70px 0;
+}
+
+.guides__photographer {
+    max-width: 1296px;
+    display: flex;
+    align-items: center;
+}
+
+.guides__images {
+    position: relative;
+}
+
+.guides__images::after {
+    content: '01';
+    background: #FFFFFF;
+    border-radius: 0 20px;
+    padding: 18px 25px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.4px;
+    color: #1D293F;
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+}
+
+.guides__info {
+    padding: 39px 0 64px 32px;
+}
+
+.guides__info-title {
+    font-size: 24px;
+    letter-spacing: -0.38px;
+    color: #28B0A6;
+    margin-bottom: 8px;
+}
+
+.guides__info-name {
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: -0.38px;
+    color: #1D293F;
+    max-width: 270px;
+    margin-top: 8px;
+    margin-bottom: 96px;
+}
+
+.guides__info-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 172px;
+}
+
+.info-description-about-title {
+    font-size: 24px;
+    letter-spacing: -0.38px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.info-description-about-text {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #99A3AD;
+}
+
+.guides__info-socials {
+    display: flex;
+    align-items: center;
+}
+
+.guides__info-socials span {
+    font-size: 18px;
+    color: #000000;
+    margin-right: 32px;
+}
+
+.experience {
+    padding: 70px 0 76px 0;
+}
+
+.experience .container {
+    background: #28B0A6;
+    border-radius: 16px;
+    text-align: center;
+    padding: 72px 0 56px 0;
+}
+
+.experience__title {
+    max-width: 1076px;
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 56px;
+    letter-spacing: -0.38px;
+    color: #FFFFFF;
+    margin: 0 auto 28px auto;
+}
+
+.experience__text {
+    font-size: 32px;
+    letter-spacing: -0.38px;
+    color: #BCF0EC;
+    margin-bottom: 56px;
+}
+
+.experience__actions .btn {
+    width: 188px;
+    background: #FFFFFF;
+    border-radius: 40px;
+    padding: 22px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: -0.38px;
+    color: #28B0A6;
+}
+
+.adventures {
+    padding: 76px 0;
+}
+
+.adventures .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    align-items: center;
+}
+
+.adventures__photo {
+    display: grid;
+    grid-template-columns: repeat(2, 376px);
+    gap: 32px;
+}
+
+.adventures__photo-image-box {
+    display: grid;
+    row-gap: 32px;
+}
+
+.adventures__info-call {
+    max-width: 466px;
+    font-family: 'PoppinsSemiBold',sans-serif;
+    font-size: 48px;
+    letter-spacing: -0.77px;
+    color: #1D293F;
+    margin-bottom: 24px;
+}
+
+.adventures__info-text {
+    max-width: 460px;
+    font-size: 24px;
+    letter-spacing: -0.12px;
+    color: #546179;
+    margin-bottom: 72px;
+}
+
+.adventures__info-actions {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.adventures__info-actions svg {
+    position: absolute;
+    top: 36px;
+    left: 24px;
+    z-index: 3;
+}
+
+.adventures__info-actions input {
+    background: #FFFFFF;
+    box-shadow: 0 32px 84px rgba(14, 86, 124, 0.16);
+    padding: 31px 69px;
+    border: 0;
+    outline: none;
+    width: 460px;
+    height: 88px;
+    position: relative;
+    z-index: 2;
+
+    font-size: 18px;
+    color: #000002;
+}
+
+.adventures__info-actions input::placeholder {
+    margin-left: 24px;
+    font-size: 18px;
+    color: #99A3AD;
+}
+
+.adventures__info-actions button {
+    border: 0;
+    outline: none;
+    width: 188px;
+    padding: 26px;
+    background: #28B0A6;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: -0.38px;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 88px;
+}
+
+.adventures__info-subtitle {
+    margin-top: 48px;
+    font-size: 16px;
+    letter-spacing: -0.38px;
+    color: #546179;
+}
+
+.partners {
+    padding: 40px 0;
+}
+
+.support {
+    padding: 96px 0;
+}
+
+.support__title {
+    font-family: 'PoppinsBold',sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.64px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.support .adventures__info-text {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.support__cards {
+    margin-top: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.support__cards-images {
+    position: absolute;
+    top: 50px;
+    left: -65px;
+    z-index: -1;
+}
+
+.support__cards-card {
+    background: #28B0A6;
+    border-radius: 12px;
+    padding: 72px 141px 56px 141px;
+    max-width: 648px;
+    text-align: center;
+    margin-right: 32px;
+    position: relative;
+}
+
+.support__cards-card.dark-back {
+    background: #1D293F;
+}
+
+.support__cards-card:last-child {
+    margin-right: 0;
+}
+
+.card-title {
+    margin: 56px 0 24px 0;
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.51px;
+    color: #FFFFFF;
+}
+
+.card-subtitle {
+    max-width: 366px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.38px;
+    color: #BCF0EC;
+    margin-bottom: 40px;
+}
+
+.card-connect {
+    margin-top: 8px;
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.38px;
+    color: #FFFFFF;
+}
+
+.quickLinks {
+    padding: 47px 0 39px 0;
+}
+
+.quickLinks .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quickLinks__actions {
+    display: flex;
+    align-items: center;
+}
+
+.quickLinks__actions-link {
+    text-decoration: none;
+    margin-right: 69px;
+    font-family: 'PoppinsSemiBold',sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.38px;
+    color: #1D293F;
+    display: flex;
+    align-items: center;
+}
+
+.quickLinks__actions-link svg {
+    margin-right: 16px;
+}
+
+.quickLinks__actions span {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.38px;
+    color: #546179;
+}
+
+.quickLinks__connect span {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.38px;
+    color: #212529;
+    padding-right: 25px;
+}
+
+.quickLinks__connect span:last-child {
+    padding-left: 25px;
+    padding-right: 0;
+    border-left: 2px solid black;
+}
+
+.ourOffices {
+    /*padding: 24px 0 16px 0;*/
+}
+
+.ourOffices .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 16px 0;
+
+    border-bottom: 1px solid #E9ECEF;
+    border-top: 1px solid #E9ECEF;
+}
+
+.ourOffices__left .guides__info-name {
+    max-width: 388px;
+    margin-bottom: 16px;
+}
+
+.ourOffices__right {
+    display: flex;
+    align-items: start;
+}
+
+.ourOffices__right-info-office {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.38px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.ourOffices__right-info-country {
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.38px;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.ourOffices__right-info {
+    margin-left: 24px;
+}
+
+.footer {
+    padding: 32px 0 60px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer__navigation {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(95px, 136px));
+    column-gap: 135px;
+}
+
+.footer__navigation-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-list-title {
+    margin-bottom: 16px;
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.38px;
+    color: #1D293F;
+}
+
+.navigation-list-item {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: -0.26px;
+    color: #546179;
+}
+
+
+
+.footer__right-box .guides__info-name {
+    margin-bottom: 40px;
+}
+
+.footer__right-box .guides__info-title {
+    font-family: 'PoppinsMedium',sans-serif;
+    color: #1D293F;
+}
+
+.epilogue {
+    padding: 60px 0 30px;
+}
+
+.epilogue__socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E9ECEF;
+}
+
+.socials-links-item {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.38px;
+    color: #000000;
+}
+
+.epilogue__socials-links .socials-links-item {
+    margin-left: 25px;
+}
+
+.epilogue__payments {
+    padding-top: 26px;
+}
+
+.epilogue__payments {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.epilogue__payments-right {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+
+
+
+/*Стили для второй страницы*/
+
+.sort {
+    padding: 40px 0;
+}
+
+.sort .container {
+    padding: 30px 24px;
+    border: 1px solid #E9ECEF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort__results {
+    font-family: 'PoppinsMedium',sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #212529;
+}
+
+.sort-title {
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #546179;
+}
+
+#sort {
+
+}
+
+
+
+
+
+/*для допов*/
+
+.check {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.check input {
+    margin-left: 50px;
+}
+
+
+/*1 . Создать страницу с попапом*/
+#parent_popup{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#popup{
+    background: burlywood;
+    width: 520px;
+    margin: 10% auto;
+    padding: 25px;
+    border: 20px solid brown;
+    position: relative;
+    box-shadow: 0px 0px 20px #000;
+    border-radius: 15px;
+
+    font-family: 'PoppinsBold',sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.38px;
+    color: darkblue;
+}
+
+.close{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ccc;
+    height: 24px;
+    line-height: 20px;
+    position: absolute;
+    right: -24px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    top: -24px;
+    width: 24px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover{
+    background-color: rgba(0, 122, 200, 0.8);
+}
+
+
+.practice {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+label {
+    font-size: 20px;
+    color: black;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
